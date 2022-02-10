@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本阿伟科技@TG/油管, server: china-gzyd-1.forwardserver.xyz, port: 32348, type: trojan, password: 1fc7bfdd-287b-473e-975f-5f11e5301395, sni: china-gzyd-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡阿伟科技@TG/油管, server: 102.wgong.xyz, port: 11221, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技@TG/油管, server: hk.wuhuv.xyz, port: 33414, type: vmess, uuid: 2d748545-f544-4d4e-98a6-b673b826b9c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.wuhuv.xyz}, udp: true}
-  - {name: 日本阿伟科技@TG/油管 2, server: 130.wgong.xyz, port: 52330, type: vmess, uuid: 9b1fd2b4-e21a-3922-bca3-b64817c1eb90, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技@TG/油管, server: 103.wgong.xyz, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-新年快乐, server: sqj.lyzghim.com, port: 443, type: trojan, password: yfkZlYd69wMTulQp, sni: sqj.lyzghim.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG/油管, server: in05.dns2333.xyz, port: 63004, type: vmess, uuid: 6d807eef-f2b2-39fe-8922-f7f5ae69931d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
+  - {name: 香港阿伟科技@TG/油管, server: 89.wowogg.cyou, port: 52289, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡阿伟科技@TG/油管, server: 183.232.56.161, port: 1501, type: vmess, uuid: 5381c7b6-9d4e-388f-b095-268733ef2fcc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: 美过阿伟科技@TG/油管, server: ceraus.moonfree.top, port: 443, type: vmess, uuid: d3180565-3fe9-4f16-ac9f-0ce578b0ea08, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cerus.moonfree.top}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -81,35 +71,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本阿伟科技@TG/油管
-      - 新加坡阿伟科技@TG/油管
+      - 韩国阿伟科技@TG/油管
       - 香港阿伟科技@TG/油管
-      - 日本阿伟科技@TG/油管 2
-      - 美国阿伟科技@TG/油管
-      - 美国阿伟科技-新年快乐
+      - 新加坡阿伟科技@TG/油管
+      - 美过阿伟科技@TG/油管
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
